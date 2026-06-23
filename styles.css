@@ -1,0 +1,309 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --link: #1f5f9f;
+  --link-hover: #0b3f73;
+  --border: #ddd;
+  --light: #f7f7f7;
+  --max: 1040px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.topbar,
+.page {
+  width: min(var(--max), calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+}
+
+.site-title {
+  color: #111;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.site-nav a {
+  color: #333;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--light);
+  color: #333;
+  padding: 7px 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 52px;
+  padding: 34px 0 54px;
+}
+
+.profile {
+  align-self: start;
+  position: sticky;
+  top: 24px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.portrait {
+  display: grid;
+  place-items: center;
+  width: 172px;
+  height: 172px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--light);
+  color: #555;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 4px;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.role {
+  margin-bottom: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.profile-links {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-links li {
+  margin-bottom: 5px;
+}
+
+.content {
+  min-width: 0;
+}
+
+.section {
+  border-bottom: 1px solid var(--border);
+  padding: 0 0 26px;
+  margin-bottom: 26px;
+}
+
+.section:last-of-type {
+  border-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+.news {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.section-title-row h2 {
+  margin-bottom: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.filter-button {
+  border: 1px solid var(--border);
+  background: var(--light);
+  color: #333;
+  padding: 5px 9px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  border-color: #999;
+  background: #e9e9e9;
+  font-weight: 700;
+}
+
+.paper-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.paper {
+  margin-bottom: 20px;
+}
+
+.paper[hidden] {
+  display: none;
+}
+
+.paper p {
+  margin-bottom: 4px;
+}
+
+.paper-title {
+  color: #111;
+  font-weight: 700;
+}
+
+.links {
+  font-size: 14px;
+}
+
+.footer {
+  color: var(--muted);
+  font-size: 13px;
+  padding-top: 6px;
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .page {
+    width: min(100% - 28px, var(--max));
+  }
+
+  .topbar {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    left: 0;
+    display: none;
+    border: 1px solid var(--border);
+    background: #fff;
+    padding: 10px 12px;
+    z-index: 5;
+  }
+
+  .site-nav.open {
+    display: grid;
+    gap: 8px;
+  }
+
+  .page {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .profile {
+    position: static;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 26px;
+    padding-bottom: 24px;
+  }
+
+  .portrait {
+    width: 118px;
+    height: 118px;
+    font-size: 32px;
+  }
+
+  .section-title-row {
+    display: block;
+  }
+
+  .filters {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}

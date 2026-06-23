@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic homepage template for a PhD student.">
+    <title>Tian Qiu | Academic Homepage</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="site-title" href="#top">Tian Qiu</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page">
+      <aside class="profile" aria-label="Profile">
+        <div class="portrait" aria-hidden="true">TQ</div>
+        <h1>Tian Qiu</h1>
+        <p class="role">Undergraduate Researcher in Artificial Intelligence</p>
+        <p>
+          School of Data Science<br>
+          Fudan University
+        </p>
+        <p>
+          Research interests:<br>
+          LLM reasoning, agents, test-time scaling
+        </p>
+        <ul class="profile-links">
+          <li><a href="mailto:qt040610@gmail.com">Email</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">ORCID</a></li>
+        </ul>
+      </aside>
+
+      <div class="content">
+        <section id="about" class="section">
+          <h2>About</h2>
+          <p>
+            I am an undergraduate student majoring in Artificial Intelligence at Fudan University,
+            broadly interested in large language models, reasoning, and agent systems.
+          </p>
+          <p>
+            My recent research explores efficient reasoning, test-time scaling, mathematical
+            formalization, and LLM-based agents for information extraction and creative generation.
+          </p>
+        </section>
+
+        <section id="research" class="section">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Large language model reasoning and efficient inference</li>
+            <li>Test-time scaling and reward-guided search</li>
+            <li>LLM agents for information extraction and creative generation</li>
+            <li>Auto-formalization and mathematical reasoning</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>Fudan University</strong>, B.E. in Artificial Intelligence, Data Science Direction,
+              2022 - 2026.
+            </li>
+            <li>
+              <strong>Hong Kong University of Science and Technology</strong>, exchange student, 2024.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>News</h2>
+          <ul class="news">
+            <li><strong>2025:</strong> BookWorld was accepted to ACL 2025 main.</li>
+            <li><strong>2025:</strong> Efficient Long CoT Reasoning was accepted by the NeurIPS 2025 Workshop on Efficient Reasoning.</li>
+            <li><strong>2024:</strong> AgentRE was accepted by CIKM 2024.</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="section">
+          <div class="section-title-row">
+            <h2>Selected Publications</h2>
+            <div class="filters" aria-label="Publication filters">
+              <button class="filter-button active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="conference">Conference</button>
+              <button class="filter-button" type="button" data-filter="preprint">Preprint</button>
+            </div>
+          </div>
+          <ol class="paper-list">
+            <li class="paper" data-type="preprint">
+              <p class="paper-title">RTTS: Reward-guided Test-Time Scaling via Statistical Confidence and Genetic Optimization</p>
+              <p><strong>Tian Qiu</strong>, Qin Liu, Fei Wang, Muhao Chen.</p>
+              <p>Preprint / submission, 2025.</p>
+              <p class="links"><a href="#">paper</a> / <a href="#">code</a> / <a href="#">bibtex</a></p>
+            </li>
+            <li class="paper" data-type="conference">
+              <p class="paper-title">Efficient Long CoT Reasoning in Small Language Models</p>
+              <p>Zhaoyang Wang*, Jinqi Jiang*, <strong>Tian Qiu*</strong>, Hui Liu, Xianfeng Tang, Huaxiu Yao.</p>
+              <p>Accepted by NeurIPS 2025 Workshop on Efficient Reasoning. Submitted to ARR, 2025.</p>
+              <p class="links"><a href="#">paper</a> / <a href="#">bibtex</a></p>
+            </li>
+            <li class="paper" data-type="conference">
+              <p class="paper-title">BookWorld: From Novels to Interactive Agent Societies for Creative Story Generation</p>
+              <p>Yiting Ran, Xintao Wang, <strong>Tian Qiu</strong>, Jiaqing Liang, Yanghua Xiao, Deqing Yang.</p>
+              <p><em>Proceedings of ACL</em>, 2025.</p>
+              <p class="links"><a href="#">paper</a> / <a href="#">project</a> / <a href="#">bibtex</a></p>
+            </li>
+            <li class="paper" data-type="preprint">
+              <p class="paper-title">JAFI: Joint Modeling Auto-Formalization and Auto-Informalization through Training-Inference Integration</p>
+              <p>Yuchen Shi, <strong>Tian Qiu</strong>, Zihan Xu, Ke Li, Deqing Yang.</p>
+              <p>Preprint, 2024.</p>
+              <p class="links"><a href="#">paper</a> / <a href="#">bibtex</a></p>
+            </li>
+            <li class="paper" data-type="conference">
+              <p class="paper-title">AgentRE: An Agent-Based Framework for Navigating Complex Information Landscapes in Relation Extraction</p>
+              <p>Yuchen Shi, Guochao Jiang, <strong>Tian Qiu</strong>, Deqing Yang.</p>
+              <p><em>Proceedings of CIKM</em>, 2024.</p>
+              <p class="links"><a href="#">paper</a> / <a href="#">bibtex</a></p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="experience" class="section">
+          <h2>Research Experience</h2>
+          <p>
+            I have worked on several LLM research projects at Fudan University and through remote
+            collaborations with UNC and UC Davis, covering relation extraction agents, storytelling
+            agents, chain-of-thought efficiency, and test-time scaling.
+          </p>
+          <p>
+            My work has been supervised or advised by Prof. Deqing Yang, Prof. Yanghua Xiao,
+            Prof. Huaxiu Yao, and Prof. Muhao Chen.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Selected Honors</h2>
+          <ul>
+            <li>Third place in both Autoformalization and Autoinformalization tracks at the AI for Math Workshop, ICML 2024.</li>
+            <li>Shanghai Second Prize, National Undergraduate Mathematical Modeling Competition, 2023.</li>
+            <li>Fudan University Student Scholarship, Third Prize, 2023.</li>
+          </ul>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>Contact</h2>
+          <p>
+            Email: <a href="mailto:qt040610@gmail.com">qt040610@gmail.com</a><br>
+            Affiliation: Fudan University
+          </p>
+        </section>
+
+        <footer class="footer">
+          Last updated: June 2026. Built as a static academic homepage.
+        </footer>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
