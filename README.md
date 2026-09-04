@@ -6,7 +6,7 @@ This folder contains a traditional static academic homepage that can be deployed
 
 - `index.html` - homepage content and structure
 - `styles.css` - traditional two-column academic styling
-- `script.js` - mobile navigation and publication filters
+- `script.js` - mobile navigation behavior
 - `assets/favicon.svg` - simple placeholder favicon
 
 ## Customize
@@ -15,7 +15,6 @@ Replace these placeholders before publishing:
 
 - Google Scholar, GitHub, CV, and ORCID links
 - paper links, project links, and BibTeX links
-- any outdated submission status or dates
 - add your CV PDF under `assets/` and change the `CV` link to point to it
 
 ## Deploy With GitHub Pages
