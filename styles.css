@@ -145,6 +145,11 @@ h1 {
   margin-bottom: 5px;
 }
 
+.disabled-link {
+  color: #999;
+  cursor: default;
+}
+
 .content {
   min-width: 0;
 }
